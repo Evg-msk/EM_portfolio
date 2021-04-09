@@ -1,0 +1,72 @@
+@import '../base/variables'
+.promo
+	min-height: 900px
+	padding: 25px 14px 0 14px
+	background: url("../img/bg1.jpg") center (center/cover) no-repeat
+	&__header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 125px
+	&_img
+		position: absolute
+		top: 107px
+		bottom: 0
+		left: 790px
+		height: 825px
+		width: 485px
+	&__title
+		font-size: 60px
+		letter-spacing: 10px
+		font-weight: 700
+		line-height: 1.1
+		margin-bottom: 75px
+.subtitle
+	position: relative
+	font-size: 40px
+	font-weight: 300
+	letter-spacing: 5px
+	margin-bottom: 85px
+.marked
+	color: #ff6094
+	font-weight: 700
+.menu
+	list-style: none
+	margin: 0
+	padding: 0
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&__item
+		margin-right: 45px
+		&:last-child
+			margin: 0
+		&__link
+			text-decoration: none
+			color: $main-color
+			transition: all .4s
+			&::after
+				display: block
+				content: ""
+				width: 0
+				height: 2px
+				background-color: $main-color
+				transition: all .4s
+			&:hover
+				text-decoration: none
+				color: $main-color
+				&::after
+					width: 100%
+.btn
+	width: 375px
+	height: 87px
+	border: none
+	border-radius: 10px
+	background: linear-gradient(to top, rgba(67,67,67, .5) 0%, rgba(255,96,148, .5) 100%)
+	&:hover
+		cursor: pointer
+		background: linear-gradient(to top, rgba(67,67,67, .8) 0%, rgba(255,96,148, .8) 100%)
+	&:focus
+		outline: none
+		border: none
+

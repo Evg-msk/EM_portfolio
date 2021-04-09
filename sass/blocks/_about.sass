@@ -1,0 +1,52 @@
+@import '../base/variables'
+.about
+	min-height: 800px
+	padding: 40px 0 45px 0
+	background: url("../img/bg2.jpg") center (center/cover) no-repeat
+	&__text
+		display: flex
+		justify-content: space-between
+		align-items: baseline
+		margin-top: 70px
+		&__item
+			width: 566px
+			font-size: 24px
+			font-weight: 300
+			margin-bottom: 60px
+			margin-right: 55px
+		&_marked
+			font-style: italic
+			border-radius: 5px
+			letter-spacing: 4px
+			text-decoration: underline #dbca0d
+.projects
+	display: flex
+	justify-content: space-around
+	margin-top: 57px
+	&__item
+		text-align: center
+		&__title
+			margin-bottom: 16px
+			font-weight: 400
+			font-size: 24px
+		&__circle
+			width: 120px
+			height: 120px
+			background-color: rgba(50, 190, 166, .4)
+			border-radius: 50%
+			margin: 0 auto
+			display: flex
+			justify-content: center
+			align-items: center
+		&__label
+			font-size: 36px
+.advantages_bg
+	display: block
+	min-height: 80px
+	border-radius: 5px
+	background-color: rgba(219, 202, 13, 0.15)
+	&:before
+		display: inline-block
+		margin-right: 5px
+		content: '\2714'
+		color: #25d366
